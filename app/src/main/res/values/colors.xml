@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pastel_pink">#CC97C1</color>
+    <color name="pastel_purple">#8E84D6</color>
+    <color name="pink">#F8B3CA</color>
+    <color name="pastel_blue">#C1D4E3</color>
+    <color name="blue">#4E7DA2</color>
+    <color name="pastel_green">#CCE8D6</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
