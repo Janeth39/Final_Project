@@ -26,13 +26,20 @@
         android:textColor="@color/blue" />
 
     <Button
-        android:id="@+id/nxtBttn"
+        android:id="@+id/CntBttn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:gravity="center"
-        android:text="Next"
-        tools:ignore="MissingConstraints" />
+        android:text="ADD CONTACTS"/>
+
+    <Button
+        android:id="@+id/EmergencyBttn"
+        android:layout_width="50dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="SOS" />
 
 
 </LinearLayout>

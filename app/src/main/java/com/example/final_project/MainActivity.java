@@ -15,10 +15,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         androidx.appcompat.app.ActionBar actionBar = getSupportActionBar();
-        actionBar.setBackgroundDrawable(getResources().getDrawable(R.drawable.header_pink));
+        actionBar.setBackgroundDrawable(getResources().getDrawable(R.drawable.header_bk));
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
-        nextBtn = (Button) findViewById(R.id.nxtBttn);
+        nextBtn = (Button) findViewById(R.id.CntBttn);
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view)
