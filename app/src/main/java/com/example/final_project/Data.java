@@ -3,6 +3,7 @@ package com.example.final_project;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.ContentObservable;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -15,7 +16,7 @@ public class Data extends SQLiteOpenHelper {
     public static final String col2 = "item1";
 
 
-    public Data(Context context) {super(context, dbName, null, 1)};
+    public Data(Context context) {super(context, dbName, null, 1);}
     @Override
     public void onCreate(SQLiteDatabase db)
     {
@@ -37,6 +38,20 @@ public class Data extends SQLiteOpenHelper {
     {
         SQLiteDatabase dq = this.getWritableDatabase();
         ContentValues CV = new ContentValues();
+        CV.put(col2, item1);
 
+        long result = dq.insert(tbName, null, CV);
+        if (result == -1)
+        {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+    public Cursor getListContents()
+    {
+        Cursor data = db.rawQuerry("SELECT * FROM" + tbName, null);
     }
 }

@@ -26,6 +26,13 @@
         android:textColor="@color/blue" />
 
     <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="My file" />
+
+    <Button
         android:id="@+id/CntBttn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,9 +41,16 @@
         android:text="ADD CONTACTS"/>
 
     <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity = "center"
+        android:text="Live Location" />
+
+    <Button
         android:id="@+id/EmergencyBttn"
-        android:layout_width="50dp"
-        android:layout_height="200dp"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
         android:layout_gravity="center_horizontal"
         android:gravity="center"
         android:text="SOS" />
