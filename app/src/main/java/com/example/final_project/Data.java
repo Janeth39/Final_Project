@@ -28,7 +28,7 @@ public class Data extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
     {
-        String a = "Drop table if exist" + tbName;
+        String a = "Drop table if EXIST" + tbName;
         db.execSQL(a);
         onCreate(db);
 
@@ -41,7 +41,7 @@ public class Data extends SQLiteOpenHelper {
         CV.put(col2, item1);
 
         long result = dq.insert(tbName, null, CV);
-        if (result == -1)
+        if(result == -1)
         {
             return false;
         }
@@ -52,6 +52,8 @@ public class Data extends SQLiteOpenHelper {
 
     public Cursor getListContents()
     {
-        Cursor data = db.rawQuerry("SELECT * FROM" + tbName, null);
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor data = db.rawQuery("SELECT* FROM" + tbName, null);
+        return data;
     }
 }
