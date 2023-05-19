@@ -12,7 +12,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="157dp">
+        android:layout_height="157dp"
+        android:layout_marginTop="20dp">
 
         <EditText
             android:id="@+id/phoneNum"
@@ -26,22 +27,31 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="130dp">
+        android:layout_height="130dp"
+        android:layout_marginLeft="15dp">
 
         <Button
             android:id="@+id/add"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
+            android:layout_margin="20dp"
             android:text="ADD" />
 
         <Button
             android:id="@+id/delete"
             android:layout_width="wrap_content"
+            android:layout_margin="20dp"
             android:layout_height="50dp"
             android:text="Delete" />
 
-
+        <Button
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content"
+            android:text="View" />
 
     </LinearLayout>
+
 
 </LinearLayout>
