@@ -10,10 +10,19 @@
     android:background="@color/pastel_blue"
     >
 
+    <TextView
+        android:id="@+id/info_First"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="39dp"
+        android:text="To delete enter the contact number and press delete"
+        android:textColor="@color/pastel_purple"
+        android:textSize="16dp"
+        android:gravity="center"/>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="157dp"
-        android:layout_marginTop="20dp">
+        android:layout_height="157dp">
 
         <EditText
             android:id="@+id/phoneNum"
@@ -52,6 +61,13 @@
             android:text="View" />
 
     </LinearLayout>
+
+    <ListView
+        android:id="@+id/LV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/pastel_purple"
+        />
 
 
 </LinearLayout>
